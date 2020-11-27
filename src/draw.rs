@@ -18,9 +18,6 @@ pub fn square(x: usize, y: usize, width: usize, height: usize, screen: String, s
             // inside a line, after start
             if x == p % width {
                 // if we are at right x
-                if y != p % height {
-                    // and we are at right y
-                }
                 new_screen.push(fill);
             } else {
                 new_screen.push(v);
@@ -31,7 +28,6 @@ pub fn square(x: usize, y: usize, width: usize, height: usize, screen: String, s
             new_screen.push(v);
         }
     }
-
     new_screen
 }
 
